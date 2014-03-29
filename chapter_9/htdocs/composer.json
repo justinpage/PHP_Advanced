@@ -1,0 +1,13 @@
+{
+    "name": "KLVTZ/htdocs",
+    "description": "Simple CMS",
+    "authors": [
+        {
+            "name": "Justin Page",
+            "email": "xjustinpagex@gmail.com"
+        }
+    ],
+    "require": {
+        "openpsa/quickform": "dev-master"
+    }
+}
