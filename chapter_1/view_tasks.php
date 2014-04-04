@@ -31,7 +31,7 @@ EOT;
 
 			echo "</ol>";
 		}
-		$dbc = mysqli_connect('localhost', 'root', 'battosai', 'PHP_Advanced');
+		$dbc = mysqli_connect('localhost', 'root', 'klvtz', 'PHP_Advanced');
 
 		if(($_SERVER['REQUEST_METHOD'] == 'POST')
 			&& isset($_POST['tasks'])
@@ -66,6 +66,8 @@ EOT;
 		while (list($task_id, $parent_id, $task) = mysqli_fetch_array($r, MYSQLI_NUM)) {
 			$tasks[$parent_id][$task_id] = $task;
 		}
+
+		die(print_r($tasks));
 
 		// make a form:
 		echo <<<EOT
