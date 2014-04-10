@@ -1,0 +1,19 @@
+{
+    "name": "KLVTZ/chapter_14",
+    "description": "Debugging, Testing and Performance",
+    "authors": [
+        {
+            "name": "Justin Page",
+            "email": "xjustinpagex@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "dev-master"
+    },
+	"autoload": {
+		"files": [
+			"Rectangle.php"
+		]
+	}
+}

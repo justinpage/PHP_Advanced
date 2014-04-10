@@ -70,17 +70,18 @@ class Employee
 
 $hr = new Department('Human Resources');
 
+
 $e1 = new Employee('Jane Doe');
 $e2 = new Employee('John Doe');
 
 $hr->addEmployee($e1);
 $hr->addEmployee($e2);
-
 echo "<h2>Department Employees</h2>";
 foreach ($hr as $e) {
 	echo "<p>{$e->getName()}</p>";
 }
 
+xdebug_dump_superglobals();
 unset($hr, $e1, $e2);
 
 ?>
